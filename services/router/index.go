@@ -13,13 +13,13 @@ func AppRouter() *gin.Engine {
 
 	router.GET("/v1/health", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"status": "healthy v1",
+			"status": "healthy v1 trigger development",
 		})
 	})
 
 	router.GET("/v2/health", func(c *gin.Context) {
 		c.JSON(200, gin.H{
-			"status": "healthy v2",
+			"status": "healthy v2 trigger development",
 		})
 	})
 
