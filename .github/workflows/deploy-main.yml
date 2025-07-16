@@ -6,6 +6,7 @@ on:
       - main
 jobs:
   deploy:
+    environment: cdk_keys
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
